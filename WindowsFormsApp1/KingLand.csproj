@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37C4367F-3BFC-46DE-8EEB-FC3CD0D81D38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN_OWNER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN_OWNER.Designer.cs">
+      <DependentUpon>ADMIN_OWNER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="companies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="companies.Designer.cs">
+      <DependentUpon>companies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_order.Designer.cs">
+      <DependentUpon>customer_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGISTIC_TEAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGISTIC_TEAM.Designer.cs">
+      <DependentUpon>LOGISTIC_TEAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_process.Designer.cs">
+      <DependentUpon>order_process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product_quotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product_quotation.Designer.cs">
+      <DependentUpon>product_quotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE_DEPARTMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE_DEPARTMENT.Designer.cs">
+      <DependentUpon>PURCHASE_DEPARTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_Order.Designer.cs">
+      <DependentUpon>Purchase_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_Order_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_Order_Status.Designer.cs">
+      <DependentUpon>Purchase_Order_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase_request.Designer.cs">
+      <DependentUpon>purchase_request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quotation_converter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quotation_converter.Designer.cs">
+      <DependentUpon>quotation_converter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quotation_track.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quotation_track.Designer.cs">
+      <DependentUpon>quotation_track.cs</DependentUpon>
+    </Compile>
+    <Compile Include="request_approval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="request_approval.Designer.cs">
+      <DependentUpon>request_approval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SALES_TEAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES_TEAM.Designer.cs">
+      <DependentUpon>SALES_TEAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_Price.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Price.Designer.cs">
+      <DependentUpon>Supplier_Price.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMIN_OWNER.resx">
+      <DependentUpon>ADMIN_OWNER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="companies.resx">
+      <DependentUpon>companies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_order.resx">
+      <DependentUpon>customer_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGISTIC_TEAM.resx">
+      <DependentUpon>LOGISTIC_TEAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_process.resx">
+      <DependentUpon>order_process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product_quotation.resx">
+      <DependentUpon>product_quotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE_DEPARTMENT.resx">
+      <DependentUpon>PURCHASE_DEPARTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Purchase_Order.resx">
+      <DependentUpon>Purchase_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_Order_Status.resx">
+      <DependentUpon>Purchase_Order_Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase_request.resx">
+      <DependentUpon>purchase_request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quotation_converter.resx">
+      <DependentUpon>quotation_converter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quotation_track.resx">
+      <DependentUpon>quotation_track.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="request_approval.resx">
+      <DependentUpon>request_approval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES_TEAM.resx">
+      <DependentUpon>SALES_TEAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Price.resx">
+      <DependentUpon>Supplier_Price.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
